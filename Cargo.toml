@@ -31,6 +31,10 @@ required-features = ["alloc"]
 name = "encode"
 required-features = ["alloc"]
 
+[[test]]
+name = "comprehensive_tests"
+required-features = ["alloc"]
+
 [package.metadata.docs.rs]
 rustdoc-args = ["--generate-link-to-definition"]
 
@@ -44,6 +48,9 @@ strum = { version = "0.25", features = ["derive"] }
 # test fixtures for engine tests
 rstest = "0.13.0"
 rstest_reuse = "0.6.0"
+# Property-based testing framework for comprehensive base64 testing
+bolero = "0.11.0"
+bolero-generator = "0.11.0"
 
 [features]
 default = ["std"]

@@ -1,0 +1,13 @@
+global UNIT_METADATA : () = UNIT_METADATA
+
+trait FakeTrait
+
+fn UNIT_METADATA()
+{
+  v@0 : ();
+
+  block@0 {
+    v@0 := ();
+    return;
+  }
+}
